@@ -1,0 +1,213 @@
+.main{
+display:flex;
+ justify-content:center;
+ flex-wrap: wrap;
+gap:10px 10px;
+background:  linear-gradient(to top,rgba(0,0,0,0.3)50%,rgba(0,0,0,0.5)50%),url(tourism.jpeg);
+
+
+}
+#logo{
+    border-radius: 10px;
+    height: 10rem;
+    width: 10px;
+
+}
+#logoo{
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;
+    margin-left:200px;
+    margin-top:20px;
+    margin-bottom: -30px;
+}
+#h1{
+    justify-content: center;
+    font-style: italic;
+    background:linear-gradient(to top,rgba(0,0,0,0.6)50%,rgba(0,0,0,0.7)50%),url(tourism.jpeg);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:orangered;
+    border: 2px solid burlywood;
+    transition: 1s ease;
+    margin-bottom: -10px;
+}
+nav{
+    width: 80%;
+    position: sticky;
+    margin: 20px auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+.nav-links{
+    justify-content: center;
+    margin-left:200px;
+}
+.nav-links ul li{
+    list-style:circle;
+    display:inline;
+    margin: 0 50px;
+    font-family: 'Times New Roman';
+    font-size: 18px;
+    border: 1px solid orangered;
+    border-radius: 5px;
+
+}
+.nav-links ul li .btttn{
+    border: 1px solid orangered;
+    background: transparent;
+}
+li:hover{
+    background-color: #ff7200;
+    font-weight: bolder;
+}
+.nav-links ul li a{
+    color: black;
+    text-decoration:none;
+ 
+}
+.search{
+    width: 330px;
+    float:right;
+    margin-right:-70px;
+    margin-top: -70px;
+}
+.srch{
+    font-family:'Times New Roman';
+    width: 200px;
+    height: 10px;
+    background: transparent;
+    border-right: none;
+    color:#fff;
+    border:1px solid #ff7200;
+    cursor: pointer;
+    font-size: 16px;
+    float:left;
+    padding:10PX;
+
+}
+.btn{
+    width:20px;
+    height:22px;
+    background: #ff7200;
+    border-radius: 10px;
+    padding-right: 50px;
+    color:beige;
+    font-size:15px;
+    border: 1px solid black;
+
+}
+.btn:focus{
+    outline: none;
+}
+.srch:focus{
+    outline: none;
+}
+.main .one{
+    margin-top: 50px;
+    border:2px solid orangered;
+
+    left:2px;
+    height: 330px;
+    width: 300px;
+
+}
+#logo{
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    height: 200px;
+    width: 200px;
+}
+.main .tone{
+    margin-top: 50px;
+    border:2px solid white;
+    height: 330px;
+    width: 300px;
+}
+#three{
+    height: 200px;
+    width: 200px;
+}
+.main .ttone{
+    margin-top: 50px;
+    border:2px solid orangered;
+    margin-left:2px;
+    height: 330px;
+    width: 300px;
+}
+.main .four{
+    margin-top: 50px;
+    border:2px solid white;
+    height: 330px;
+    width: 300px;
+}
+.main .five{
+    margin-top: 50px;
+    height:330px;
+    width: 300px;
+    border:2px solid white;
+}
+.main .six{
+    margin-top: 50px;
+    height:330px;
+    width: 300px;
+    border:2px solid orangered;
+}
+.main .seven{
+    margin-top: 50px;
+    height: 330px;
+    width: 300px;
+    border:2px solid white;
+}
+.main .eight{
+    margin-top: 50px;
+    height: 330px;
+    width: 300px;
+    border:2px solid orangered;
+}
+.main .nine{
+    margin-top: 50px;
+    height:330px;
+    width: 300px;
+    border:2px solid orangered;
+}
+.main .ten{
+    margin-top: 50px;
+    height: 330px;
+    width: 300px;
+    border:2px solid white;
+    
+}.main .eleven{
+    margin-top: 50px;
+    height:330px;
+    width: 300px;
+    border:2px solid orangered;
+}
+.main .twelve{
+    margin-top: 50px;
+    height: 330px;
+    width: 300px;
+    border:2px solid white;
+}
+.bn{
+    margin-left: 70px;
+    background-color: #ff7200;
+    font-size: 15px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.bttn{
+
+    background-color: #ff7200;
+    font-size: 15px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.bn:hover{
+    background-color: #fff;
+}
+.bttn:hover{
+    background-color: #fff;
+}
