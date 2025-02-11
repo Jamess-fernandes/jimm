@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        #task-input {
+            width: 50%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #add-task-btn {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #add-task-btn:hover {
+            background-color: #3e8e41;
+        }
+
+        #task-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .task {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .task.done {
+            text-decoration: line-through;
+        }
+        #text{
+            color:grey;
+        }
+        #text:hover{
+            color:#3e8e41;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>To-Do List</h1>
+        <input type="text" id="task-input" placeholder="Add new task">
+        <button id="add-task-btn">Add Task</button>
+        <br>
+        <h7 id="text">Click the completed task after finishing</h7>
+        <ul id="task-list"></ul>
+        <script>// Get elements
+            const taskInput = document.getElementById('task-input');
+            const addTaskBtn = document.getElementById('add-task-btn');
+            const taskList = document.getElementById('task-list');
+
+            // Initialize task array
+            let tasks = [];
+
+            // Function to add task
+            function addTask(task) {
+                tasks.push({ text: task, done: false });
+                renderTaskList();
+            }
+
+            // Function to render task list
+            function renderTaskList() {
+                taskList.innerHTML = '';
+                tasks.forEach((task, index) => {
+                    const taskElement = document.createElement('li');
+                    taskElement.classList.add('task');
+                    taskElement.textContent = task.text;
+                    if (task.done) {
+                        taskElement.classList.add('done');
+                    }
+                    taskElement.addEventListener('click', () => {
+                        tasks[index].done = !tasks[index].done;
+                        renderTaskList();
+                    });
+                    taskList.appendChild(taskElement);
+                });
+            }
+
+            // Add event listener to add task button
+            addTaskBtn.addEventListener('click', () => {
+                const task = taskInput.value.trim();
+                if (task) {
+                    addTask(task);
+                    taskInput.value = '';
+                }
+            });
+
+            // Add event listener to task input (press enter)
+            taskInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    addTaskBtn.click();
+                }
+            });
+        </script>
+</body>
+
+</html>
